@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.page-container{
+    zoom: 125%;
+    font-family: 'Mulish', sans-serif;
+}
+section{
+    overflow-x:hidden;
+}
+@media(min-width:640px){
+    .simple{
+        overflow:visible;
+    }
+}
+
+.gradient-text {
+    background-image: linear-gradient(to right, rgb(255 105 159), #ffba69);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent; /* Text color needs to be transparent for the gradient to show */
+    padding-bottom: 0.1em;
+}
+
+/* Slide up (text) */
+.slide-up {
+    opacity: 0;
+    transform: translateY(75%); /* Start off-screen below */
+    transition: all 1s ease;
+}
+.slide-up.visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide up to normal position */
+}
+
+/* Slide from left (image) */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-10%); /* Start off-screen on the left */
+    transition: all 1s ease;
+}
+.slide-left.visible {
+    opacity: 1;
+    transform: translateX(0); /* Move to normal position */
+}
+
+/* Slide from right (image) */
+.slide-right {
+    opacity: 0;
+    transform: translateX(10%); /* Start off-screen on the right */
+    transition: all 1s ease;
+}
+.slide-right.visible {
+    opacity: 1;
+    transform: translateX(0); /* Move to normal position */
+}
