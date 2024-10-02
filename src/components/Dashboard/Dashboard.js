@@ -105,11 +105,8 @@ const Dashboard = () => {
                         <div className="my-4 flex gap-2">
                             <input type="checkbox" />
                             <span className="ml-[2%] w-[17%] ">Name</span>
-                            <span className="ml-[2%] w-[12%] ">Admin</span>
-                            <span className="ml-[2%] w-[10%] ">Members</span>
-                            <span className="ml-[2%] w-[22%] ">Status</span>
-                            <span className="ml-[2%] w-[12%] ">Run time</span>
-                            <span className="ml-[2%] w-[12%] ">Finish date</span>
+                            <span className="ml-[2%] w-[17%] ">Company</span>
+                            <span className="ml-[2%] w-[17%] ">Email</span>
                         </div>
                         <div className="w-9/10 h-[1px] bg-slate-200"></div>
                         <div className=""> <TaskListCards /> </div>
